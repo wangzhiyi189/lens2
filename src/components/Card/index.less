@@ -1,0 +1,162 @@
+@name-color:#0f1419;
+@time-color:#5B7083;
+@number-color:#203C7C;
+@border-color:#EBEEF0;;
+.card-box{
+  width:100%;
+  display:flex;
+  box-shadow: 0px 1px 0px 0px @border-color;
+  margin-bottom:13px;
+  padding:5px 0px 23px 0;
+  box-sizing: border-box;
+  .card-avatar{
+    margin-right:12px;
+  }
+  .card-info{
+    // width:90%;
+    flex:1;
+    min-width: 0;
+    min-height: 0;
+    .card-info_header{
+      display:flex;
+      justify-content: space-between;
+      .info{
+        white-space: nowrap;
+	      overflow: hidden;
+        text-overflow: ellipsis;
+        display:flex;
+        width:100%;
+        >span{
+          cursor: pointer;
+          margin:auto 0;
+        }
+        .name{
+          color:@name-color;
+          font-size: 15px;
+          font-weight: 700;
+        }
+        .time{
+          margin-left:5px;
+          color: #5B7083;
+          font-family: SF Pro Text;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        .badge{
+          img{
+            vertical-align: middle;
+            margin:3px 5px 0 5px;
+          }
+        }
+      }
+      .more{
+        cursor: pointer;
+      }
+    }
+    .card-info_text{
+      width:100%;
+      color:@name-color;
+      font-family: SF Pro Text;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; 
+      margin-bottom:30px;
+      word-wrap:break-word; 
+      word-break:normal;
+    }
+    .card-info_feature{
+      margin-top:10px;
+      display:flex;
+      justify-content: space-between;
+      >div{
+        display:flex;
+        cursor: pointer;
+        padding:0 10px;
+        span{
+          color: #203C7C;
+          font-family: SF Pro Text;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          margin:auto 0 auto 5px;
+        }
+      }
+    }
+  }
+}
+.review{
+  box-shadow: 0px 1px 0px 0px @border-color;
+  padding-bottom:8px;
+  margin-bottom:13px;
+  .review-box{
+    display:flex;
+  }
+  .review-avatar{
+    margin-right:12px;
+  }
+  .review-input{
+    width:100%;
+    .ant-input{
+      padding:12px 20px;
+      background:#ececec;
+      min-height:40px!important;
+      border-radius: 10px;
+      border-style:none;
+      color: #414D55;
+      font-family: SF Pro Text;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .feature{
+    margin-top:20px;
+    // margin-bottom:20px;
+    display:flex;
+    justify-content: space-between;
+    img{
+      cursor: pointer;
+    }
+    .feature-btn{
+      img{
+        margin-right:20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-box{
+    padding:5px 0px 23px 0;
+    .card-info{
+      // width:88%;
+      .card-info_header{
+        .info{
+          .name{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .review{
+    .review-input{
+      .ant-input{
+        min-height:32px!important;
+        padding:6px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header{
+    padding:10px 15px;
+    .header-logo{
+      img{
+        width:40px;
+      }
+    }
+  }
+}

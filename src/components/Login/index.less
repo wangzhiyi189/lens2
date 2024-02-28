@@ -1,0 +1,256 @@
+@button-color:#0E76FD;
+@title-color:#25292E;
+@des-color:rgba(60,66,66,0.60);
+@border-color:rgba(0,0,0,0.06);
+.login{
+  text-align: right;
+  margin-bottom:40px;
+  .ant-btn{
+    margin:auto 0;
+    height:40px;
+    padding:8px 16px;
+    align-items: center;
+    gap:8px;
+    flex-shrink:0;
+    background:@button-color;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    span{
+      font-family: SF Pro Rounded;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+  }
+}
+.login-modal{
+  .ant-modal{
+    width:720px!important;
+    .ant-modal-content{
+      padding:0;
+      border-radius: 24px;
+      box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.32);
+      .modal-main{
+        display:flex;
+        font-family: SF Pro Rounded;
+        font-style: normal;
+        letter-spacing: 0.6px;
+        .title{
+          padding: 18px 36px 18px 0;
+          color:@title-color;
+          font-size:18px;
+          font-weight:800;
+          text-overflow: ellipsis;
+        }
+        .des{
+          margin-top:8px;
+          font-size:14px;
+          font-weight: 600;
+          color:@des-color;
+        }
+        .main-left{
+          min-width:288px;
+          box-sizing: border-box;
+          padding: 0 24px 41px 24px;
+          .card{
+            display:flex;
+            padding:12px 0;
+            cursor: pointer;
+            .card-logo{
+              margin:auto 0;
+              margin-right:12px;
+              width:28px;
+              height:28px;
+              border-radius: 5px;
+              line-height:28px;
+              text-align: center;
+              img{
+                vertical-align: middle;
+                width:28px;
+              }
+            }
+            .card-text{
+              margin:auto 0;
+              font-size: 16px;
+              color:@title-color;
+              font-weight:700;
+            }
+          }
+        }
+        .main-right{
+          width:432px;
+          padding:60px 50px 41px 50px;
+          box-sizing: border-box;
+          border-left:1px solid @border-color;
+          .title{
+            text-align: center;
+            padding: 18px 36px 6px 0;
+          }
+          .card{
+            display:flex;
+            margin-top:20px;
+            .logo{
+              width:48px;
+              min-width:48px;
+              height:48px;
+              margin:auto 0;
+              border-radius: 5px;
+              background:#f5f5f5;
+            }
+            .card-right{
+              margin-left:16px;
+              .text{
+                font-size:14px;
+                font-weight: 700;
+                color:@title-color;
+                white-space:nowrap;
+              }
+            }
+          }
+          .btns{
+            margin-top:30px;
+            text-align: center;
+            .ant-btn{
+              span{
+                font-size:14px;
+                font-weight: 700;
+              }
+            }
+            .ant-btn-text{
+              margin-top:10px;
+              color:@button-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.login-drawer{
+  background:#f5f5f5!important;
+  border-radius:28px 28px 0 0 ;
+  .ant-drawer-wrapper-body{
+    .ant-drawer-body{
+      padding:16px 0;
+      .drawer-mian{
+        .drawer-mian_title{
+          color:@title-color;
+          font-family: SF Pro Rounded;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          text-align: center;
+        }
+        .drawer-mian_card{
+          display:flex;
+          flex-flow: wrap;
+          .item{
+            width:25%;
+            text-align: center;
+            margin-top:32px;
+            img{
+              width:60px;
+              height:60px;
+              display:block;
+              margin:0 auto;
+            }
+            span{
+              color:@title-color;
+              font-family: SF Pro Rounded;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              display:block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space:nowrap;
+            }
+            .text{
+              margin-top:8px;
+            }
+            .des{
+              color:@button-color;
+            }
+          }
+        }
+        .drawer-mian_wallet{
+          background:#fff;
+          padding:32px;
+          margin-top:16px;
+          .title{
+            margin-bottom:10px;
+            color:@title-color;
+            font-family: SF Pro Rounded;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+          }
+          .item{
+            padding:10px 20px;
+            display:flex;
+            .item-logo{
+              width:48px;
+              min-width:48px;
+              margin-right:16px;
+              img{
+                width:100%;
+              }
+            }
+            .item-right{
+              font-family: SF Pro Rounded;
+              font-size: 14px;
+              font-style: normal;
+              .text{
+                font-weight: 700;
+                color:@title-color
+              }
+              .des{
+                color:@des-color;
+                font-weight: 500;
+              }
+            }
+          }
+          .btn{
+            padding:0 10px;
+            margin-top:19px;
+            display:flex;
+            justify-content: space-between;
+            .ant-btn{
+              border-radius: 20px;
+              padding:0 24px;
+              height:44px;
+              span{
+                color:@button-color;
+                font-family: SF Pro Rounded;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .login{
+    .ant-btn{
+      border-radius: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login{
+    .ant-btn{
+      border-radius: 14px;
+      padding:0px 9px;
+      span{
+        font-size:16px;
+      }
+    }
+  }
+}

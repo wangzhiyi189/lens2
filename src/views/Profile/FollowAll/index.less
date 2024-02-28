@@ -1,0 +1,40 @@
+.followall{
+  .followall-header{
+    border-bottom: 1px solid #DCE2E8;
+    display:flex;
+    justify-items: center;
+    position:relative;
+    .followall-tab{
+      flex:1;
+      padding:10px 0 13px 0;
+      color:#203C7C;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+    .avatar{
+      left:50%;
+    }
+    .followall-header_bar{
+      position:absolute;
+      height:3px;
+      width:50%;
+      background:#203C7C;
+      bottom:0;
+      transition: width .3s,left .3s,right .3s;
+    }
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .followall{
+    .followall-header{
+      .followall-tab{
+        font-size:15px;
+      }
+    }
+  }
+}

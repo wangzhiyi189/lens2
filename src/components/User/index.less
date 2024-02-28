@@ -1,0 +1,324 @@
+@button-color:#0E76FD;
+@title-color:#25292E;
+@des-color:rgba(60,66,66,0.60);
+@border-color:rgba(0,0,0,0.06);
+@main-color:#203c7c;
+.user{
+  text-align: right;
+  margin-bottom:40px;
+  display:flex;
+  justify-content: right;
+  height:40px;
+  .notification,.user-info{
+    margin:auto 0;
+    cursor: pointer;
+  }
+  .notification{
+    margin-right:24px;
+    // display:flex;
+    img{
+      vertical-align: middle;
+    }
+  }
+  .user-info_box{
+    .avatar{
+      // margin-right:17px;
+    }
+    .info{
+      text-align: left;
+      color: #414D55;
+      .info-name{
+        font-size: 14px;
+        font-weight: 500;
+        span:nth-child(1){
+          margin-left:0;
+        }
+        span{
+          margin-left:5px;
+        }
+      }
+      .info-des{
+        font-size: 10px;
+        font-weight: 400;
+      }
+    }
+    .down{
+      margin-left:22px;
+    }
+  }
+}
+.user-main{
+  width:360px;
+  margin-top:10px;
+  background: #fff;
+  padding: 24px 0px 18px 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.32);
+  z-index: 999;
+  .user-main_info{
+    text-align: center;
+    .address{
+      margin-top:14px;
+      .text{
+        span{
+          font-weight: 800;
+          font-size:18px;
+          color:@title-color;
+        }
+      } 
+      .mdx{
+        font-size: 18px;
+        color:#25292E;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+      }
+      .des{
+        font-weight: 600;
+        color:@des-color;
+        font-size:14px;
+      }
+    }
+  }
+  .user-main_box{
+    margin-top:18px;
+    padding:0 20px;
+    .item{
+      padding:10px 20px;
+      display:flex;
+      cursor: pointer;
+      img,span{
+        margin:auto 0;
+      }
+      img{
+        margin-right:15px;
+      }
+      span{
+        font-size: 18px;
+        font-weight: 600;
+        color:@title-color;
+      }
+    }
+    .item:hover{
+      border-radius: 10px;
+      background: #F2FCFF;
+    }
+  }
+}
+.notification-box{
+  width:380px;
+  margin-top:20px;
+  background: #fff;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.32);
+  z-index: 999;
+  .title{
+    color:@main-color;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 800;
+    padding:0 4px;
+  }
+  .notcard{
+    display:flex;
+    padding:15px 0;
+    cursor: pointer;
+    .notcard-avatar{
+      margin:auto 0;
+      margin-right:15px;
+    }
+    .notcard-info{
+      font-weight: 400;
+      .text{
+        color:#000;
+        font-size:12px;
+        .name{
+          font-weight: 600;
+        }
+      }
+      .des{
+        color:#555;
+      }
+    }
+    .notcard-more{
+      width:100px;
+      display:flex;
+      justify-content: right;
+      .dot{
+        margin-top:6px;
+        margin-right:10px;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background:#fdca40;
+      }
+      >img{
+        width:24px;
+        height:24px;
+      }
+    }
+  }
+}
+.grantpht{
+  .grantpht-info{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    .address{
+      margin:auto 0 auto 20px;
+      .text{
+        color:#25292E;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .des{
+        font-size: 14px;
+        color:rgba(60, 66, 66, 0.60);
+        font-weight: 600;
+      }
+    }
+  }
+  .grantpht-title{
+    margin-top:15px;
+    color:#203c7c;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .grantpht-des{
+    width:280px;
+    margin:20px auto ;
+    color:#666;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .ant-btn{
+    width:100%;
+    padding: 5px 15px;
+    height:40px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    background:#203C7C;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .decline{
+    background: #999;
+    margin-top:15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .user{
+    margin-left:23px;
+    height:30px;
+    .notification{
+      margin-right:12px;
+    }
+    .user-info_box{
+      .info{
+        display:none;
+      }
+      .avatar{
+        margin-right:-20px;
+      }
+    }
+  }
+  .user-main{
+    width:270px;
+    .user-main_box{
+      .item{
+        img{
+          width:24px;
+        }
+        span{
+          font-size: 15px;
+        }
+      }
+      .item:hover{
+        border-radius: 5px;
+        background:rgb(235, 229, 229);
+      }
+    }
+  }
+}
+.mobiledrawer{
+  display:flex;
+  .ant-avatar{
+    margin:auto 0;
+  }
+  .mobiledrawer-more{
+    width:24px;
+    margin-left:6px;
+  }
+}
+.user-drawer{
+  border-radius: 15px 15px 0px 0px;
+  .ant-drawer-body{
+    padding:0;
+    .user-drawer_main{
+      position:relative;
+      .off{
+        width:24px;
+        position: absolute;
+        top:15px;
+        right:20px;
+      }
+      .drawer-main_header{
+        padding:15px 20px;
+        display:flex;
+        border-bottom: 1px solid #EFEFEF;
+        .ant-avatar{
+          margin:auto 0;
+        }
+        .info{
+          margin:auto 0 auto 16px;
+          .info-name{
+            color:@title-color;
+            font-size: 12px;
+            font-weight: 600;
+          }
+          .info-money{
+            color:@title-color;
+            font-size: 10px;
+            font-weight: 800;
+          }
+          .info-des{
+            color: @des-color;
+            font-size: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+      .drawer-main_item{
+        margin-top:10px;
+        padding:10px 0;
+        .item{
+          padding:10px 20px;
+          display:flex;
+          img{
+            margin:auto 0;
+            width:24px;
+            margin-right:15px;
+            
+          }
+          .text{
+            margin:auto 0;
+            color:@main-color;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 767px) {
+  .user{
+    .notification{
+      margin-right:10px;
+    }
+  }
+}

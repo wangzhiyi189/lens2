@@ -1,0 +1,80 @@
+@main-color:#203C7C;
+.schedule{
+  width:auto;
+  .schedule-header{
+    display:flex;
+    justify-content: space-between;
+    .ant-picker{
+      height:36px; 
+      width:400px;
+      border-radius: 8px;
+      background: #ECECEC;
+      border:0;
+    }
+  }
+  .ant-table-wrapper{
+    margin-top:35px;
+    overflow: auto;
+    position: absolute;
+    max-width:1072px;
+    width:100%;
+    .ant-table{
+      border-radius: 8px;
+      max-width:1100px;
+      .ant-table-container{
+        border-inline-start:0;
+        .ant-table-thead{
+          .ant-table-cell{
+            color:@main-color;
+            background: #F1F5F8;
+            padding:18px;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+        .ant-table-tbody{
+          .ant-table-row{
+            .ant-table-cell{
+              border-bottom:1px dashed #A2C0D4;
+            }
+            .ant-table-cell:nth-child(1){
+              position:relative;
+              width:80px;
+              min-width:80px;
+              span{
+                position:absolute;
+                bottom:-14px;
+                padding:5px;
+                display:flex;
+                border-radius: 8px;
+                text-align: center;
+                margin-top:30px;
+                box-sizing: border-box;
+                background:#fff;
+                color: #414D55;
+                font-family: Rubik;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+              }
+            }
+            .ant-table-cell:nth-child(1n+2){
+              color: #414D55;
+              text-align: center;
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              // min-width:141px;
+              text-align: center;
+              padding:9px 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

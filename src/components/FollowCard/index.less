@@ -1,0 +1,125 @@
+@title-color:#203C7C;
+@border-color:#efefef;
+.followcard{
+  display:flex;
+  justify-content: space-between;
+  border-bottom:1px solid @border-color;
+  padding:20px;
+  .card-info{
+    width:100%;
+    display:flex;
+    .card-info_name{
+      margin:auto 0;
+      padding-left:20px;
+      flex:1;
+      min-width: 0;
+      .name{
+        color: #0F1419;
+        font-size: 24px;
+        font-weight: 700;
+        width:70%;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .des{
+        font-family: SF Pro Text;
+        font-size: 16px;
+        color:@title-color;
+      }
+    }
+  }
+  .card-btn{
+    margin:auto 0;
+    display:flex;
+    .ant-btn{
+      background:transparent;
+      height:36px;
+      border:1px solid @title-color;
+      display:flex;
+      margin-right:15px;
+      padding:4px 10px;
+      img,span{
+        margin:auto 0;
+      }
+      img{
+        margin-right:10px;
+      }
+      span{
+        color:@title-color;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    .notifications{
+      cursor: pointer;
+    }
+  }
+}
+
+.card-btn_more{
+  border-radius: 10px;
+  padding:5px 20px;
+  >div{
+    display:flex;
+    width:240px;
+    padding:10px 0px;
+    box-sizing: border-box;
+    img,span{
+      margin:auto 0;
+    }
+    span{
+      margin-left:15px;
+      font-size: 18px;
+      font-weight: 600;
+      color:@title-color
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .followcard{
+    .card-info{
+      .card-info_name{
+        .name{
+          font-size: 14px;
+        }
+        .des{
+          font-size: 12px;
+        }
+      }
+    }
+    .card-btn{
+      margin:auto 0;
+      display:flex;
+      .ant-btn{
+        padding:6px 10px;
+        height:32px;
+        margin-right:10px;
+        img{
+          width:17px;
+          margin-right: 6px;
+        }
+        span{
+          font-size:12px;
+        }
+      }
+      .ant-dropdown-trigger{
+        width:17px;
+      }
+    }
+  }
+  .card-btn_more{
+    padding:5px 15px;
+    >div{
+      width:190px;
+      img{
+        width:24px;
+      }
+      span{
+        margin-left:10px;
+        font-size:15px;
+      }
+    }
+  }
+}

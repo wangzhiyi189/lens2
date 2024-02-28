@@ -1,0 +1,85 @@
+@background-color:#f7f9fa;
+@title-color:#203C7C;
+@shadow-color:#EFF1F2;
+@des-color:#5b7083;
+@text-color:#0F1419;
+.medoxie{
+  width:auto;
+  background:@background-color;
+  border-radius: 8px;
+  .title,.text{
+    padding:12px 16px;
+    font-size:20px;
+    font-weight: 700;
+    color:@title-color;
+    box-shadow: 0px 1px 0px 0px @shadow-color;
+  }
+  .text{
+    font-size:15px;
+    box-shadow:0 0 0 0;
+  }
+  .card{
+    padding:12px 16px;
+    box-shadow: 0px 1px 0px 0px @shadow-color;
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+    .card-info{
+      margin:auto 0;
+      width:200px;
+      .card-des{
+        color:@des-color;
+        font-family: SF Pro Text;
+        font-size: 10px;
+        font-style: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .card-text{
+        color: @text-color;
+        font-family: SF Pro Display;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+    }
+    .card-img{
+      margin:auto 0 auto 14px;
+      width:68px;
+      min-width:68px;
+      height:68px;
+      border-radius: 6px;
+      background:#999;
+      .ant-image{
+        height:100%;
+        img{
+          height:100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .medoxie{
+    >.title,.text{
+      font-size:15px;
+    }
+    .card{
+      .card-info{
+        width:100px;
+      }
+      .card-img{
+        width:51px;
+        min-width:51px;
+        height:51px;
+      }
+    }
+  }
+}

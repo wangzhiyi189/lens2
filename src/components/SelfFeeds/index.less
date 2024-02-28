@@ -1,0 +1,127 @@
+@name-color:#0F1419;
+@des-color:#203c7c;
+@border-color:rgba(0,0,0,0.06);
+@button-color:#0E76FD;
+.selffeeds{
+  display:flex;
+  padding-bottom:8px;
+  box-shadow: 0px 1px 0px 0px #EBEEF0;
+  margin-bottom:20px;
+  .selffeeds-avatar{
+    margin-right:12px;
+  }
+  .selffeeds-info{
+    width:100%;
+    .name{
+      .ant-input{
+        padding:12px 0;
+        color:@name-color;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      input::-webkit-input-placeholder{
+        color:@name-color;
+      }
+    }
+    .des{
+      display:flex;
+      font-family: Roboto;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      padding-bottom:20px;
+      box-shadow: 0px 1px 0px 0px #EBEEF0;
+      img,span{
+        margin:auto 0;
+      }
+      img{
+        margin-right:8px;
+      }
+    }
+    .more{
+      display:flex;
+      justify-content: space-between;
+      margin-top:12px;
+      margin-bottom:9px;
+      .more-left{
+        margin:auto 0;
+        img{
+          cursor: pointer;
+          margin-right:18px;
+        }
+        .forbidden{
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+          // pointer-events: none;
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+      }
+      .ant-btn{
+        margin:auto 0;
+        height:40px;
+        padding:8px 16px;
+        align-items: center;
+        gap:8px;
+        flex-shrink:0;
+        background:@des-color;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+        color:#ffff;
+        span{
+          font-weight: 700;
+          letter-spacing: 0.6px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .selffeeds{
+    .selffeeds-info{
+      .name{
+        padding:6px 0;
+        font-size:15px;
+      }
+      .more{
+        .ant-btn{
+          padding:0px 11px;
+          height:27px;
+          span{
+            font-size:12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .selffeeds{
+    .selffeeds-info{
+      .name{
+        font-size:16px;
+      }
+      .des{
+        margin-top:19px;
+      }
+      .more{
+        .more-left{
+          img{
+            width:18px;
+          }
+        }
+        .ant-btn{
+          padding:0px 17px;
+          height:40px;
+          border-radius: 5px;
+          span{
+            font-size:18px;
+          }
+        }
+      }
+    }
+  }
+}

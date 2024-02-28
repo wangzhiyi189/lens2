@@ -1,0 +1,44 @@
+
+.home{
+  padding-right:30px;
+  padding-left:16px;
+  // height:90vh;
+  overflow-y:auto;
+  overflow-x:hidden;
+  // overflow:hidden;
+  .example{
+    text-align: center;
+    .ant-spin{
+      margin-top:200px;
+    }
+  }
+  .ant-tabs{
+    background:#fff;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home{
+    padding-right:0;
+    padding-left:0;
+  }
+}
+
+.home::-webkit-scrollbar {
+  width:6px;
+}
+  /* 滚动槽 */
+.home::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+  border-radius:10px;
+}
+  /* 滚动条滑块 */
+.home::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background:rgba(0,0,0,0.1);
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+.home::-webkit-scrollbar-thumb:window-inactive {
+  background:rgba(255,0,0,0.4);
+}
+  
